@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm justify-content-end navbar-dark  " class="custo" style="background-color: #7d884ae7;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="mini-logo.png" alt="Bootstrap"  height="54" style="filter: invert();" >
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end tex" id="navbarSupportedContent" >
+            <ul class="navbar-nav" style="margin-right: 30px;">
+              <li class="nav-item " >
+                <a class="nav-link "  href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="reserva.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurante.html">Restaurante</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="actividades.html">Actividades</a>
+              </li>
+              <div>
+              <a href="login.html"> <img src="https://cdn-icons-png.freepik.com/256/1077/1077114.png" href= "login.html" alt=""  height="34"
+               style="filter: invert(); margin-right: 10px;"> </a> </div>
+              
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Font_Awesome_5_solid_shopping-cart.svg/2305px-Font_Awesome_5_solid_shopping-cart.svg.png" alt=""  height="34"
+              " style="filter: invert();">
+            </ul>
+              
+        
+           
+          </div>
+        </div>
+      </nav>
+  <!-- Carrusel inicio -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100"
+          src="https://img.freepik.com/free-photo/cozy-studio-apartment-with-bedroom-living-space_1262-12323.jpg?t=st=1712891671~exp=1712895271~hmac=db66841c77008fa235a86702fb83ac782e9ad10216a324a66905cb1143bb18b5&w=1380"
+          alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://img.freepik.com/free-photo/hotel-room-with-lit-television_1203-940.jpg?t=st=1712891845~exp=1712895445~hmac=82b24e92e3a30f1a1c1f2a06b4e15fd8eff594cdfe90efc94c6febcb71a62b25&w=1380"
+          alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://img.freepik.com/free-photo/white-pillow-bed_74190-2473.jpg?t=st=1712891802~exp=1712895402~hmac=8c7da836904785627a6e7665bd39a883066f1484ae117fc979020dc51eea3207&w=1380"
+          alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Cassurel fin -->
+
+  <!-- titulo -->
+  <div class="col g-2" style=" margin: 30px; margin-left: 1px">
+    <h2 style="text-align: center;">Selecciona la habitacion que desees</h2>
+  </div>
+
+  <!-- Filtro -->
+ 
+
+  <div class="form-floating" style="margin-left: 80px; margin-right: 80px;">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Todas</option>
+      <option value="1">King</option>
+      <option value="2">Matrimonial</option>
+      <option value="3">Suite</option>
+    </select>
+    <label for="floatingSelect">Selecciona tu tipo de habitación:</label>
+  </div>
+
+
+
+
+  <!-- Primer post -->
+  <div class="col align-items-center justify-content-start w-75 mx-auto my-3">
+    <img src="https://hotelplazarevolucion.com/wp-content/uploads/2020/12/king-1.jpg" alt="" width="100%">
+    <div class="col mt-3">
+      <h2>1 King bed, Classic Room</h2>
+      <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas minus odit
+        officiis et
+        non iure ipsam minima atque, molestiae placeat consectetur praesentium debitis nostrum. Corrupti ad
+        voluptate
+        consequatur repudiandae?</p>
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Ver Detalles
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">King Bed Classic Room</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                    <img src="https://hotelplazarevolucion.com/wp-content/uploads/2020/12/king-1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <h1 style="padding-top: 12px; padding-bottom: 12px;"> Detalles Habitación</h1> 
+                  <table class="table">
+                    <thead>
+        
+                    </thead>
+                    <tbody>
+                      <tr>
+                       
+                        <td>Nombre</td>
+                        <td>Classic Room</td>
+                   
+                      </tr>
+                      <tr>
+                      
+                        <td>lorem lorem</td>
+                        <td>lorem  lorem</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>lorem lorem</td>
+                        <td>lorem lorem</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>lorem lorem</td>
+                        <td>lorem lorem</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Tamaño</td>
+                        <td>50 mt2</td>
+              
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+
+  <!-- Segundo post -->
+  <div class="col align-items-center justify-content-start w-75 mx-auto mt-5">
+    <img
+      src="https://t1.uc.ltmcdn.com/es/posts/6/1/1/como_reservar_una_habitacion_por_horas_en_un_hotel_de_lujo_18116_orig.jpg"
+      alt="" width="100%">
+    <div class="col mt-3">
+      <h2>1 King bed, Premium Room</h2>
+      <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas minus odit
+        officiis
+        et non iure ipsam minima atque, molestiae placeat consectetur praesentium debitis nostrum. Corrupti
+        ad
+        voluptate consequatur repudiandae?</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cachupin
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Cachupin</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                    <img src="https://static.wixstatic.com/media/b6258f_78eba8934a444f019afb6d2186a31681~mv2.jpeg/v1/fill/w_500,h_667,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b6258f_78eba8934a444f019afb6d2186a31681~mv2.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <h1 style="padding-top: 12px; padding-bottom: 12px;"> Biografia</h1> 
+                  <table class="table">
+                    <thead>
+        
+                    </thead>
+                    <tbody>
+                      <tr>
+                       
+                        <td>Nombre</td>
+                        <td>Golden Nuss</td>
+                   
+                      </tr>
+                      <tr>
+                      
+                        <td>Edad</td>
+                        <td>1.5 años</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Raza</td>
+                        <td>Mestizo</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Sexo</td>
+                        <td>Macho</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Tamaño</td>
+                        <td>M</td>
+              
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </div>
+  </div>
+
+  <!-- Tercer post -->
+  <div class="col align-items-center justify-content-start w-75 mx-auto mt-5">
+    <img src="https://hotelbellavista.cl/wp-content/uploads/2021/09/Habitacion-matrimonial-superior-destacada.jpg"
+      alt="" width="100%">
+    <div class="col mt-3">
+      <h2>1 Matrimonial Bed, Classic Room</h2>
+      <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas minus
+        odit
+        officiis et non iure ipsam minima atque, molestiae placeat consectetur praesentium debitis
+        nostrum. Corrupti
+        ad voluptate consequatur repudiandae?</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cachupin
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Cachupin</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                    <img src="https://static.wixstatic.com/media/b6258f_78eba8934a444f019afb6d2186a31681~mv2.jpeg/v1/fill/w_500,h_667,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b6258f_78eba8934a444f019afb6d2186a31681~mv2.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <h1 style="padding-top: 12px; padding-bottom: 12px;"> Biografia</h1> 
+                  <table class="table">
+                    <thead>
+        
+                    </thead>
+                    <tbody>
+                      <tr>
+                       
+                        <td>Nombre</td>
+                        <td>Golden Nuss</td>
+                   
+                      </tr>
+                      <tr>
+                      
+                        <td>Edad</td>
+                        <td>1.5 años</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Raza</td>
+                        <td>Mestizo</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Sexo</td>
+                        <td>Macho</td>
+              
+                      </tr>
+                      <tr>
+                      
+                        <td>Tamaño</td>
+                        <td>M</td>
+              
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+
+  </div>
+
+  <!-- Cuarto post -->
+  <div class="col align-items-center justify-content-start w-75 mx-auto mt-5 mb-5">
+    <img src="https://www.hoteltrapaniin.it/esp/assets/images/gallery/matrimoniales-superior-hotel-trapani-in-01.jpg"
+      alt="" width="100%">
+    <div class="col mt-3">
+      <h2>1 Matrimonial Bed, Premium Room</h2>
+      <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas minus odit
+        officiis
+        et non iure ipsam minima atque, molestiae placeat consectetur praesentium debitis nostrum. Corrupti
+        ad
+        voluptate consequatur repudiandae?</p>
+      <button type="button" class="btn btn-primary w-100">Reservar</button>
+    </div>
+
+  </div>
+<footer style="background-color:  #7d884ae7;">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="logo-grande.png" alt="" width="180" class="mb-3" style="filter: invert();">
+          <p class="font-italic text-muted"> Empresa dedicada a la gestión hotelera y de restaurantes con más de 20 años en la industria. Le ofrecemos 
+            a nuestros clientes una atención de primer nivel para que vivan momentos inolvidables junto a familiares o amigos. </p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" style="filter: invert();">
+          <h6 class="text-uppercase font-weight-bold mb-4">Actividades</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Billar</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Cine</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Tenis de Mesa</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Bowling</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" style="filter: invert();">
+          <h6 class="text-uppercase font-weight-bold mb-4">Habitaciones</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Matrimoniales</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Individuales</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Familares</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Premium</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4" style="filter: invert();">Encuéntranos en: </h6>
+          <img src="mapa.jpg" alt="" height="300px">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyrights -->
+    <div class="bg-light py-4">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© Veranum. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+
+
+</body>
+
+</html>

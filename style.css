@@ -1,0 +1,40 @@
+body{
+    background-color: #fffefe;
+}
+
+li{
+    margin-right: 30px;
+}
+
+
+a{
+    color: aliceblue;
+
+}
+
+.custom-color {
+    color: blue; /* Replace blue with your desired color */
+  }
+
+.btn-primary {
+    background-color: #7d884ae7;
+}
+
+.titulo-carousel{
+    font-size: x-large;
+}
+
+
+
+.footer{
+    background-color: #7d884ae7;
+}
+
+.custom-caption {
+    font-size: 60px;
+    color: #13c14a;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif; 
+    transform: translateY(-600%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

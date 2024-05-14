@@ -76,8 +76,83 @@
               </form>
               <button type="submit" class="form-control btn btn-primary rounded submit px-3">Acceder</button>
               <p></p>
-              <p style="opacity: 40%;">No tengo cuenta, me quiero registrar.</p>
+              <button style="opacity: 40%; color: black;"  type="button" class="btn btn-link w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                No tengo cuenta, me quiero registrar.
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de Registro </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       
+                        <h1 style="padding-top: 12px; padding-bottom: 12px;"> Registro</h1> 
+                      
+                      <form>
+                        
+                        <div class="col">
+                          <label for="formInput">Rut</label>
+                          <input type="text " class="form-control" name="rut" id="rut">
+                          
+                          
+                        </div>
+                      <div class="row">
+                        <div class="col">
+                          <label for="formInput"> Nombre </label>
+                          <input type="text" class="form-control" name="nombre" id="nombre">
+                        </div>
+
+                      <div class="col">
+
+                          <label for="formInput"> Apellido </label>
+                          <input type="text" class="form-control" name="apellido" id="apellido">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <label for="formInput"> Correo </label>
+                          <input type="email" class="form-control" name="correo" id="correo">
+                        </div>
+
+                      <div class="col">
+
+                          <label for="formInput"> Teléfono </label>
+                          <input type="text" class="form-control" name="telefono" id="telefono" placeholder="+569 ">
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <label for="formInput"> Contraseña </label>
+                        <input type="password" class="form-control" name="password" id="password">
+                      </div>
+
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Estoy de acuerdo con los <a style="color: blue ;"  >  Términos y Condiciones </a>
+                        </label>
+                      </div>
+
+                        
+
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Registrarme</button>
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
           </div>
+          
           
           <div class="col-sm-7">
               <img src="https://cdn.luxuryhotel.world/file/hotcdn/hotel/cover/627674_1516797961.jpg" alt="" width="100%">
@@ -85,5 +160,20 @@
   
         </div>
       </div>
+
+      
+
+      <div class="container text-center" style="margin-top: 100px; margin-bottom: 150px;">
+        <div class="row">
+          
+          
+         
+          
+          
+       
+  
+        </div>
+      </div>
+
   </body>
 </html>  
